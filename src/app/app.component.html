@@ -1,0 +1,35 @@
+<!-- <div>
+  <img src="{{ imageUrl }}" alt="" />
+</div>
+
+<input type="text" #phoneNumber (keyup)="(0)" />
+<h2>{{ phoneNumber.value }}</h2>
+<img [src]="imageUrl" alt=""> -->
+
+<div>
+  <div
+    [class.special]="isSpecial"
+    (click)="onMouseOver()"
+    (mouseout)="onMouseOver()"
+  >
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis modi ut
+    praesentium nisi enim, maxime minima sapiente adipisci dolores a voluptas
+    ipsam saepe id laborum asperiores delectus quo eum quasi?
+  </div>
+  <div>
+    Necessitatibus maiores quos ut! Excepturi esse in quia nisi sit ducimus
+    reprehenderit! Ullam quod doloribus, enim nesciunt sed atque omnis excepturi
+    incidunt ut, ab vitae impedit ipsa pariatur quo dignissimos?
+  </div>
+  <!--<div [class.special]="isSpecial">
+    Accusantium illum similique odit quasi tenetur temporibus, quod consectetur
+    vero. Nesciunt soluta, iusto dolores placeat exercitationem error fugiat?
+    Odio aspernatur expedita neque sit quod dolores consequatur quo explicabo
+    sapiente sint?
+  </div> -->
+</div>
+
+<input type="text" [(ngModel)]="username" />
+<h2>{{ username }}</h2>
+<button> [disabled] = 'checkEmpty()'
+   {{Click Me!}}</button>
